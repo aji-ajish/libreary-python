@@ -20,15 +20,16 @@ def mainMenu():
                 print('\n')
                 bookName=input("Enter the Book Name to you want: ")
                 library.borrowingBook(bookName)
-            elif userInput=="2":
+            elif userInput=="3":
                 print('\n')
                 library.returningBook()
-            elif userInput=="2":
+            elif userInput=="4":
                 print('\n')
                 library.addBook()
-            elif userInput=="2":
+            elif userInput=="5":
                 print('\n')
-                library.deleteBook()
+                bookName=input("Enter the Book Name to you want Delete: ")
+                library.deleteBook(bookName)
             if userInput=="6":
                 print("Thanks for Visiting Library")
                 break
